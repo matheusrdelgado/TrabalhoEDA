@@ -1,0 +1,25 @@
+\doxysection{funcoes.\+h}
+\hypertarget{funcoes_8h_source}{}\label{funcoes_8h_source}\mbox{\hyperlink{funcoes_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{dados_8h}{dados.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8c_af292a9c78ac27ae533acad087e23df55}{ProcuraAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ h,\ \textcolor{keywordtype}{int}\ v);}
+\DoxyCodeLine{00017\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8c_a5e0c9ef35b658baec26f38af9a73480e}{criaAntena}}(\textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{char}\ frequencia);}
+\DoxyCodeLine{00018\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8c_a01bdad926d677320255ff5425b40e59b}{inserirOrdenado}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ head,\ \mbox{\hyperlink{struct_antena}{Antena}}*\ novo);}
+\DoxyCodeLine{00019\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8c_afc55840d0d1ec1973351ddfe03d403b6}{removeAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ h,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ c);}
+\DoxyCodeLine{00020\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8c_a14a6798575dbaf7017ae82b9b706d85f}{alteraAntena}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ h,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ c,\ \textcolor{keywordtype}{char}\ f);}
+\DoxyCodeLine{00021\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ \mbox{\hyperlink{funcoes_8c_ad03ce4ec815a985608e86829ee602135}{inserirEfeito}}(\mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ head,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ c,\ \textcolor{keywordtype}{int}\ id1,\ \textcolor{keywordtype}{int}\ id2);}
+\DoxyCodeLine{00022\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ \mbox{\hyperlink{funcoes_8c_a5712c9a3d1ba5bbf73cc0c199be6c583}{atualizaEfeito}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ h);}
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funcoes_8c_ab05736d1772807b0e2cd544b2fdc81e0}{mostraLista}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ antenas,\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ efeitos);}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funcoes_8c_a5be8beec94381371998f17798e70590f}{gravarFicheiroB}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ h,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nomeFicheiro,\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ efeitos);}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funcoes_8c_a24e648132154787e90bf2a33292ec2dd}{gravarMatrizTxt}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ h,\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ efeitos,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ ficheiro);}
+\DoxyCodeLine{00026\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8c_ae993286fcb69b11bd27c3c09ba54b196}{lerFicheirobinario}}(\textcolor{keywordtype}{char}*\ nomeFicheiro);}
+\DoxyCodeLine{00027\ \mbox{\hyperlink{struct_antena}{Antena}}*\ \mbox{\hyperlink{funcoes_8c_af366fc2839a7e6780f8d733253701a4c}{DestroiListaAntenas}}(\mbox{\hyperlink{struct_antena}{Antena}}*\ h);}
+\DoxyCodeLine{00028\ \mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ \mbox{\hyperlink{funcoes_8c_a100614e6da91e1ecff3a196736835534}{DestroiListaEfeitos}}(\mbox{\hyperlink{struct_nefasto}{Nefasto}}*\ h);}
+
+\end{DoxyCode}
