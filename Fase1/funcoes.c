@@ -65,7 +65,7 @@ Antena* inserirOrdenado(Antena* head, Antena* novo) {
     if (novo == NULL) return head;
     if (ProcuraAntena(head, novo->id)) return head;
 
-    // Se a lista estiver vazia ou se o novo elemento for menor que o primeiro, insere no início
+    // Se a lista estiver vazia ou se o novo elemento for menor que o primeiro, insere no inÃ­cio
     if (head == NULL || (novo->linha < head->linha) ||
         (novo->linha == head->linha && novo->coluna < head->coluna)) {
         novo->next = head;
@@ -73,7 +73,7 @@ Antena* inserirOrdenado(Antena* head, Antena* novo) {
         return head;
     }
 
-    // Procura a posição correta para inserir o novo elemento
+    // Procura a posiÃ§Ã£o correta para inserir o novo elemento
     Antena* aux = head;
     while (aux->next != NULL &&
         ((aux->next->linha < novo->linha) ||
@@ -186,7 +186,7 @@ Nefasto* inserirEfeito(Nefasto* head, int l, int c, int id1, int id2) {
 
 
 /**
- * @brief A função percorre a lista de antenas e calcula os efeitos entre antenas com a mesma frequencia
+ * @brief A funÃ§Ã£o percorre a lista de antenas e calcula os efeitos entre antenas com a mesma frequencia
  * e atualiza a lista removendo efeitos se a antena for removida ou alterada
  * @param h
  * @return Nefasto*
@@ -244,7 +244,7 @@ void mostraLista(Antena* antenas, Nefasto* efeitos) {
  * @brief Liberta a memoria da lista de Antenas
  *
  * @param h Ponteiro para o inicio da lista de antenas.
- * @return Antena* Retorna NULL após liberar todos antenas.
+ * @return Antena* Retorna NULL apÃ³s liberar todos antenas.
  */
 Antena* DestroiListaAntenas(Antena* h) {
     Antena* aux;
@@ -260,7 +260,7 @@ Antena* DestroiListaAntenas(Antena* h) {
  * @brief Liberta a memoria da lista de Efeitos Nefastos
  *
  * @param h Ponteiro para o inicio da lista de efeitos nefastos.
- * @return Nefasto* Retorna NULL após liberar todos efeitos nefastos.
+ * @return Nefasto* Retorna NULL apÃ³s liberar todos efeitos nefastos.
  */
 Nefasto* DestroiListaEfeitos(Nefasto* h) {
     Nefasto* aux;
