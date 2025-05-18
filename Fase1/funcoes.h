@@ -4,7 +4,7 @@
 	@brief     Assinaturas das funcoes para manipular as antenas e os efeitos nefastos
     @author    Matheus Delgado (a31542 IPCA)
     @date      25.03.2025
-    @copyright © Matheus Delgado, 2025. All right reserved.
+    @copyright Â© Matheus Delgado, 2025. All right reserved.
 
 **/
 #pragma once
